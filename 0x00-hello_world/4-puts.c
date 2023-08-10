@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *main - main entry point
- *return : always 0 (success)
+ * main - Function prints a string using puts
+ * @void: function argument
+ * Return: always 0 (success)
  */
 int main(void)
 {
