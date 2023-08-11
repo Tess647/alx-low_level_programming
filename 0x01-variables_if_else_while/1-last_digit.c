@@ -4,6 +4,12 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
+/**
+  * main - Entry point of the program
+  *
+  * checks the last digit
+  * Return: Always 0 (success)
+  */
 int main(void)
 {
 	int n;
