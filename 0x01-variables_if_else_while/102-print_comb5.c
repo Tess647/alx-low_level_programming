@@ -13,7 +13,7 @@ int main(void)
 
 	while (i <= 98)
 	{
-		int j = i;
+		int j = i + 1;
 
 		while (j <= 99)
 		{
