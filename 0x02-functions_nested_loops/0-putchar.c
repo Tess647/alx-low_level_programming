@@ -13,12 +13,14 @@ int main(void)
 	char word[8] = "_putchar";
 	int i;
 
+	i = 0;
+
 	while (i < 8)
 	{
 		_putchar(word[i]);
-		_putchar('\n');
 		i++;
 	}
+	_putchar('\n');
 	return (0);
 }
 
