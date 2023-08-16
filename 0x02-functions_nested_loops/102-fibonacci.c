@@ -13,7 +13,8 @@ int main(void)
 
 	fibonacci [0] = 1;
 	fibonacci [1] = 2;
-	printf("%ld\n","%ld\n", fibonacci[0], fibonacci[1]);
+	printf("%ld\n", fibonacci[0]);
+	printf("%ld\n", fibonacci[1]);
 
 	for (i = 2; i < 50, i++)
 	{
