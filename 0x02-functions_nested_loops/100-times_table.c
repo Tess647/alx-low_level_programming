@@ -5,6 +5,8 @@
   * @n: An input integer value
   * Return: Nothing
   */
+void putformat(int n);
+
 void print_times_table(int n)
 {
 	int i, j;
@@ -44,7 +46,7 @@ void putformat(int n)
 		_putchar(n / 10 + '0');
 		_putchar(n % 10 + '0');
 	}
-	ele
+	else
 	{
 		_putchar(',');
 		_putchar(' ');
