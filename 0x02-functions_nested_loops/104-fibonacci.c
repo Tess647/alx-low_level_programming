@@ -13,6 +13,8 @@ int main(void)
 	unsigned long n1 = 0;
 	unsigned long n2 = 1, n3;
 	unsigned long n1_h1, n1_h2, n2_h1, n2_h2;
+	unsigned long h1, h2;
+
 	for (inc = 0; inc < 98; inc++)
 	{
 		n3 = n1 + n2;
