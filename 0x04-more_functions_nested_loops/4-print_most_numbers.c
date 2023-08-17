@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-  * print_numbers - prints integers from 0-9
+  * print_numbers - prints integers from 0-9 except 2 and 4
   *
   * Return: nothing
   */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	char i;
 
