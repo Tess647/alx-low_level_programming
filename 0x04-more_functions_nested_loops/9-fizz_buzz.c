@@ -30,7 +30,7 @@ int main(void)
 		}
 		else
 		{
-			printg(" %d", i);
+			printf(" %d", i);
 		}
 	}
 	printf("\n");
