@@ -22,10 +22,10 @@ int main(void)
 				printf("Fizz");
 			if ((i % 5) == 0)
 				printf("Buzz");
-			printf(" ");
+			putchar('\');
 		}
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
