@@ -1,0 +1,1 @@
+C pointera and arrays
