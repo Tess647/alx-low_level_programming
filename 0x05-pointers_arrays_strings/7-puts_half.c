@@ -6,7 +6,7 @@
   * Return: Nothing
   */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int len = 0;
 	int i;
@@ -15,7 +15,7 @@ void puts2(char *str)
 	{
 		++len;
 	}
-	for (i = (len - 1)/2; i < len; i++)
+	for (i = (len - 1) / 2; i < len; i++)
 	{
 		_putchar(str[i]);
 	}
