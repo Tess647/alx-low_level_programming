@@ -6,24 +6,20 @@
   * Return: Nothing
   */
 
-void swapC(char *a, char *b)
-{
-	char temp = *a;
-	*a = *b;
-	*b = temp;
-}
-
 void rev_string(char *s)
 {
 	int len = 0;
 	int i;
+	char temp;
 
 	while (s[len] != '\0')
 	{
 		++len;
 	}
-	for (i = 0; i < (len /2); i++)
+	for (i = 0; i < (len / 2); i++)
 	{
-		swapC(&s[i], &s[len - i - 1]);
+		temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
 	}
 }
