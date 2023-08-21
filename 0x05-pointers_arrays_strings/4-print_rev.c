@@ -5,10 +5,14 @@
   * @s: input parameter(pointer)
   * Return: Nothing
   */
-void _puts(char *s)
+
+void print_rev(char *s)
 {
-	while (*str != '\0')
+	int i = _strlen(s) - 1;
+
+	for (; i >= 0; i--)
 	{
-		_putchar(str)
+		_putchar(*(s + i));
 	}
+	_putchar('\n');
 }
