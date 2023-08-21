@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
-  * print_rev - prints out strings in reverse order
+  * rev_string - prints out strings in reverse order
   * @s: input parameter(pointer)
   * Return: Nothing
   */
 
-void print_rev(char *s)
+void swapC(char *a, char *b)
 {
-	int i = 0;
+	char temp = *a;
+	*a = *b;
+	*b = temp;
+}
 
-	while (s[i] != '\0')
+void rev_string(char *s)
+{
+	int len = 0;
+	int i;
+
+	while (s[len] != '\0')
 	{
-		++i;
+		++len;
 	}
-	--i;
-	for (; i >= 0; i--)
+	for (i = 0; i < (len /2); i++)
 	{
-		_putchar(*(s + i));
+		swapC(&s[i], &s[len - i - 1]);
 	}
-	_putchar('\n');
 }
