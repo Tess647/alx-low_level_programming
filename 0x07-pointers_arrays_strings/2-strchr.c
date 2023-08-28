@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
   * _strchr - function copies memory area
@@ -10,11 +11,10 @@
 
 char *_strchr(char *s, char c)
 {
-	int len = 0;
+	unsigned int len = 0;
 	unsigned int i;
-	char *pos = NULL;
 
-	while (s[i] != '\0')
+	while (s[len] != '\0')
 	{
 		++len;
 	}
@@ -23,8 +23,8 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			pos == s[i];
+			return (s + i);
 		}
 	}
-	return (pos);
+	return (NULL);
 }
