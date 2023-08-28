@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
-  * _strchr - function copies memory area
-  * @s: address of the memory char C
-  * @c: char input parameter
+  * _strchr - locates a character in memory
+  * @s: string to search
+  * @c: char to find
   *
-  * Return: a pointer to s
+  * Return: a pointer to the first ocuurence of the character
+  * c int the string s, or NULL if the character is not found
   */
 
 char *_strchr(char *s, char c)
