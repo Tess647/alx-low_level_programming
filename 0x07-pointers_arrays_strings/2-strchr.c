@@ -3,11 +3,10 @@
 
 /**
   * _strchr - locates a character in memory
-  * @s: string to search
-  * @c: char to find
+  * @s: input parameter
+  * @c: input parameter
   *
-  * Return: a pointer to the first ocuurence of the character
-  * c int the string s, or NULL if the character is not found
+  * Return: a  char pointer
   */
 
 char *_strchr(char *s, char c)
