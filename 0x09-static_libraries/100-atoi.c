@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * atoi - function that converts a string
+ * _atoi - function that converts a string
  *       into an integer
  *
  * @s: string input pointer
@@ -11,5 +11,5 @@
 
 int _atoi(char *s)
 {
-	return _atoi(s);
+
 }
