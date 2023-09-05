@@ -2,35 +2,32 @@
 #include "main.h"
 
 /**
-  * _strdup - contains a copy of the string
-  * @str: pointer to the string memory
-  *
-  * Return: pointer to the array (Success), NULL (Error)
-  */
-
+ * *_strdup - copies the string given as parameter
+ * @str: string to duplicate
+ *
+ * Return: pointer to the copied string (Success), NULL (Error)
+ */
 char *_strdup(char *str)
 {
-	unsigned int i, count;
-	char *array;
+	char *dup;
+	unsigned int i, len;
 
 	i = 0;
-	count = 0;
+	len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[count])
-	{
-		count++;
-	}
+	while (str[len])
+		len++;
 
-	array = malloc(sizeof(char) * (count + 1));
+	dup = malloc(sizeof(char) * (len + 1));
 
-	if (array == NULL)
+	if (dup == NULL)
 		return (NULL);
 
-	while ((array[i] = str[i]) != '\0')
-			i++;
+	while ((dup[i] = str[i]) != '\0')
+		i++;
 
-	return (array);
+	return (dup);
 }
