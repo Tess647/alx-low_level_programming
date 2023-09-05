@@ -29,7 +29,7 @@ char *_strdup(char *str)
 	if (array == NULL)
 		return (NULL);
 
-	while (array[i] = str[i] != '\0')
+	while ((array[i] = str[i]) != '\0')
 			i++;
 
 	return (array);
