@@ -12,7 +12,7 @@ char *_strdup(char *str)
 {
 	unsigned int i, count;
 	char *array;
-	
+
 	i = 0;
 	count = 0;
 
