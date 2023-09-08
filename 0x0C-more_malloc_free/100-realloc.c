@@ -33,7 +33,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	optr = ptr;
 
-	if (new_size > old_soze)
+	if (new_size > old_size)
 	{
 		for (i = 0; i < old_size; i++)
 			nptr[i] = optr[i];
