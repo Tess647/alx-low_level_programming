@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 /**
   * _isalpha - Check main.h
@@ -11,18 +14,7 @@
 
 int _isalpha(int c)
 {
-	char upper, lower;
-	int isletter = 0;
-
-	for (upper = 'A'; upper <= 'Z'; upper++)
-	{
-		for (lower = 'a'; lower <= 'z'; lower++)
-		{
-			if (c == upper || c == lower)
-				isletter = 1;
-		}
-	}
-	return (isletter);
+	return (isletter(c));
 }
 
 
