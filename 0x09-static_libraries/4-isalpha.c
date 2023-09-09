@@ -14,7 +14,7 @@
 
 int _isalpha(int c)
 {
-	return (isletter(c));
+	return (isalpha(c));
 }
 
 
