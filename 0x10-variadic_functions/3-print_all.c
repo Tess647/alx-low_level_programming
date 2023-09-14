@@ -13,11 +13,10 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format[i])
+	if (format)
 	{
-		if (format[i] == '%')
+		while (format[i])
 		{
-			i++;
 			switch (format[i])
 			{
 				case 'i':
