@@ -6,12 +6,12 @@
  */
 void print_all(const char * const format, ...)
 {
+	int i = 0;
+	char *x, *sep = "";
+
 	va_list args;
 
 	va_start(args, format);
-
-	int i = 0;
-	char *sep = "";
 
 	while (format[i])
 	{
@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 					printf("%s%c", sep, va_arg(args, int));
 					break;
 				case 's':
-					char *x = va_arg(args, char*);
+					x = va_arg(args, char*);
 
 					if (!x)
 						x = "(nil)";
