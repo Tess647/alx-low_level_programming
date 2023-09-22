@@ -30,9 +30,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		while (linked_list_nodes != NULL)
-			linked_list_nodes->next = linked_list_nodes;
-		linked_list_nodes = node;
+		while (linked_list_nodes->next != NULL)
+			linked_list_nodes = linked_list_nodes->next;
+		linked_list_nodes->next = node;
 	}
 
 	return (*head);
