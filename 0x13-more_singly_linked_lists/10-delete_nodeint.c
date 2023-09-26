@@ -10,14 +10,14 @@
  * Return: 1 if it succeeded, -1 if it failed.
  */
 
-listint_t *delete_nodeint_at_index(listint_t **head, unsigned int idx)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *next, *prev = *head;
 	unsigned int count;
 
 	if (index != 0)
 	{
-		for (count = 0; count < idex - 1 && prev != NULL; count++)
+		for (count = 0; count < index - 1 && prev != NULL; count++)
 		{
 			prev = prev->next;
 		}
