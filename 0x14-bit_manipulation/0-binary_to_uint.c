@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	int bit_pos = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
 	while (b[bit_pos] != '\0')
