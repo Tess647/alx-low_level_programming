@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * error_file - checks if files can be opened.
@@ -37,9 +38,9 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	files_from = open(argv[1], O_RDONLY);
+	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	error_fiile(file_from, file_to, argv);
+	error_file(file_from, file_to, argv);
 
 	nchar = 1024;
 	while (nchar == 1024)
