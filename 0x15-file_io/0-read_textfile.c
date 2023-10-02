@@ -10,7 +10,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_des;
-	ssize_t numberOfBytesRead, numberOfBytesWritten;
+	ssize_t numBytesRead;
+	ssize_t numBytesWrten;
 	char *buffer;
 
 	if (!filename)
@@ -25,12 +26,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!buffer)
 		return (0);
 
-	numberOfBytesRead = read(file_des, buffer, letters);
-	numberOfBytesWritten = write(STDOUT_FILENO, buffer, numberOfBytesRead);
+	numBytesRead = read(file_des, buffer, letters);
+
+	numBytesWrten = write(STDOUT_FILENO, buffer, numBytesRead);
 
 	close(file_des);
 
 	free(buffer);
 
-	return (numberOfBytesRead);
+	return (numBytesWrten);
 }
